@@ -30,7 +30,7 @@ All the Linux terminal commands used in this project are available in the file *
 - Execute `python kafka_server.py` at the CLI. 
 - Run `kafka-console-consumer --topic police.calls --bootstrap-server localhost:9099 --from-beginning` command from linux terminal and capture the output generated at the console
 
-    ![kafka-consumer-console output](output_screenshots/kafka-consumer-console output.png)
+    ![kafka-consumer-console output](output_screenshots/kafka-consumer-console-output.png)
     
 ### Step-2: Consume the Kafka generated data using Spark Structured streaming
 
@@ -39,11 +39,11 @@ All the Linux terminal commands used in this project are available in the file *
 - Create `writestream` by writing the aggregated output in the console
 - Capture the output generated at the console
 
-    ![Spark Job progress reporter](output_screenshots/Spark Job progress reporter.png.png)
+    ![Spark Job progress reporter](output_screenshots/Spark_Job_progress_reporter.png)
         
 - Launch the Spark CLI by clicking the **Preview** button in the Udacity workspace.
 
-    ![Spark Web UI](output_screenshots/Spark Web UI.png)
+    ![Spark Web UI](output_screenshots/Spark_Web_UI.png)
     
 
 ### Answers to questions
