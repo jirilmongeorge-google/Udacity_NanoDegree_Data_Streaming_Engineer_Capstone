@@ -1,0 +1,18 @@
+# Init project in Linux Terminal 1
+./startup.sh
+
+# Start zookeeper  in Linux Terminal 2
+/usr/bin/zookeeper-server-start config/zookeeper.properties
+
+# Start kafka  in Linux Terminal 3
+/usr/bin/kafka-server-start config/server.properties
+
+# Producer  in Linux Terminal 4
+python kafka_server.py
+
+# Consumer  in Linux Terminal 5
+/usr/bin/kafka-console-consumer --bootstrap-server localhost:9099 --topic police.calls --from-beginning
+
+# Spark consumer job  in Linux Terminal 6
+spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.4 --master local[*] --conf spark.ui.port=3000  data_stream.py
+
