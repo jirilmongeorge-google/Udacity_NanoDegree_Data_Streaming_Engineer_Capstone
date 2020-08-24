@@ -57,5 +57,5 @@ All the Linux terminal commands used in this project are available in the file *
     - `numInputRows` : The aggregate (across all sources) number of records processed in a trigger.
     - `inputRowsPerSecond` : The aggregate (across all sources) rate of data arriving.
     - `processedRowsPerSecond` : The aggregate (across all sources) rate at which Spark is processing data.
-	-  Spark.sql.shuffle.partitions: In spark, shuffle operations are expensive, which is why parallelising is crucial for high traffic apps.
+	-  Spark.sql.shuffle.partitions: In spark, shuffle operations are expensive, which is why parallelising is crucial for high traffic apps. 
 	
